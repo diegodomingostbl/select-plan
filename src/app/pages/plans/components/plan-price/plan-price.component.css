@@ -1,0 +1,24 @@
+.animated-button {
+  border: 1px solid #186df6;
+  padding: 5px 10px;
+  transition: transform 0.3s ease;
+  border-radius: 10px;
+  background-color: #3b82f6;
+  color: white;
+}
+
+.animated-button:hover {
+  animation: oscillate 0.5s infinite;
+}
+
+@keyframes oscillate {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}

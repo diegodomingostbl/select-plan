@@ -1,0 +1,38 @@
+.card {
+  background-color: whitesmoke;
+  border: 1px solid black;
+  border-radius: 10px;
+
+  width: 400px;
+  height: 400px;
+
+  margin: 20px 10px;
+  padding: 10px;
+
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  transition: background-color 0.5s ease;
+}
+
+.card__header {
+  text-align: center;
+}
+
+.card__content {
+  flex-grow: 1;
+  width: 100%;
+}
+
+.card__footer {
+  margin-top: auto;
+  width: 100%;
+}
+
+.card:hover {
+  background-color: rgba(172, 212, 255, 0.534);
+}

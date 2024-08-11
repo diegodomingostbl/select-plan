@@ -1,0 +1,38 @@
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul li {
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 10px;
+}
+
+.bronze li::before {
+  background-image: url("../../../../shared/assets/medalha-de-bronze.png");
+}
+
+.silver li::before {
+  background-image: url("../../../../shared/assets/medalha-de-prata.png");
+}
+.gold li::before {
+  background-image: url("../../../../shared/assets/medalha-de-ouro.png");
+}
+
+ul li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+div {
+  margin: 10px 5px;
+}

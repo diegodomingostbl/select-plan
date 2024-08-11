@@ -1,0 +1,11 @@
+<div>
+  <ul
+    [ngClass]="{
+      bronze: type === 1,
+      silver: type === 2,
+      gold: type === 3
+    }"
+  >
+    <li *ngFor="let item of benefits">{{ item }}</li>
+  </ul>
+</div>
